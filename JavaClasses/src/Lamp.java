@@ -5,9 +5,9 @@ public class Lamp {
     {
         this.name=name;
     }
-    void getLampName()
+    String getLampName()
     {
-        System.out.println(this.name);
+        return this.name;
     }
 
 }
