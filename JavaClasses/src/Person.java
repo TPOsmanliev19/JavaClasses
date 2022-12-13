@@ -1,11 +1,9 @@
-public class Person {
+public class Person extends Mammal implements Animal {
     private String name;
-    private int age;
 
-    public Person(String name,int age)
+    public Person(String name)
     {
-        this.name=name;
-        this.age=age;
+        this.name = name;
     }
 
     public String getName()
@@ -13,28 +11,29 @@ public class Person {
         return this.name;
     }
 
-    public int getAge()
+    public Person(int age)
     {
-        return this.age;
-    }
 
-    public void setName(String name)
-    {
-        this.name=name;
-    }
-
-    public void setAge(int age)
-    {
-        this.age=age;
     }
 
     @Override
-    public void toString()
-    {
-        System.out.println(this.getName()+" - "+this.getAge());
+    public void eat() {
+        System.out.println("Person is eating..");
     }
 
+    @Override
+    public void main() {
 
+    }
 
+    @Override
+    public void walk() {
+        System.out.println("Person is walking..");
+    }
 
+    @Override
+    public void test(String text)
+    {
+        System.out.println("Testing in Mammal");
+    }
 }
